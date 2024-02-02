@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Alon Sagi</title>
+    
+    <!-- Metadatas -->
+    <meta charset="utf-8">
+    <meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible">
+    <meta content="Portfolio Website" name="description">
+    <meta content="width=device-width, initial-scale=1" name="viewport">
+    
+    <!-- ** Favicon ** -->
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/favicon/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon/favicon-16x16.png" />
+    <link rel="manifest" href="assets/favicon/site.webmanifest" />
+
+    <style>
+      body, html {
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+      }
+      iframe {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        border: none;
+      }
+    </style>
+  </head>
+  
+  <body>
+    <script>
+      embed();
+      
+      function embed() {
+        const iframe = document.createElement('iframe');
+        iframe.src = 'https://alonsagi.ngrok.io';
+        iframe.setAttribute('allow', 'microphone');
+        iframe.setAttribute('frameborder', '0');        
+        document.body.appendChild(iframe);
+      }
+    </script>
+  </body>
+</html>
