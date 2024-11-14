@@ -2,7 +2,7 @@
 
 @font-face {
   font-family: 'CalSans';
-  src: url('/assets/CalSans-SemiBold.ttf');
+  src: url('assets/CalSans-SemiBold.ttf');
 }
 
 * {
