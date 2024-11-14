@@ -1,23 +1,100 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
-  <!-- Black background circle -->
-  <circle cx="16" cy="16" r="16" fill="#000000"/>
-  
-  <!-- Simplified AS monogram, GitHub-style -->
+  <!-- Refined squircle background -->
   <path d="
-    M10 10 
-    L16 10 
-    Q20 10 20 14
-    L20 18
-    Q20 22 16 22
-    L10 22
-    L10 19
-    L16 19
-    Q17.5 19 17.5 17.5
-    L17.5 14.5
-    Q17.5 13 16 13
-    L12.5 13
-    L12.5 22
-    L10 22
+    M16 0
+    C20 0, 24 0, 28 1
+    C31 4, 32 8, 32 16
+    C32 24, 31 28, 28 31
+    C24 32, 20 32, 16 32
+    C12 32, 8 32, 4 31
+    C1 28, 0 24, 0 16
+    C0 8, 1 4, 4 1
+    C8 0, 12 0, 16 0
     Z" 
-    fill="white"/>
+    fill="#24292e"/>
+  
+  <!-- Subtle background glow -->
+  <circle cx="16" cy="16" r="14" fill="#ffffff" opacity="0.05"/>
+  
+  <!-- Main Robot Structure -->
+  <g fill="#ffffff" opacity="0.95">
+    <!-- Enhanced frame with better proportions -->
+    <path d="M7 12
+             L9 7
+             H23
+             L25 12
+             V22
+             L23 27
+             H9
+             L7 22Z" 
+          fill="#ffffff"/>
+    
+    <!-- Refined top connector -->
+    <path d="M14 7
+             L15 3
+             H17
+             L18 7" 
+          fill="#ffffff"/>
+  </g>
+
+  <!-- Improved Optical System -->
+  <g>
+    <!-- Enhanced optic housing -->
+    <path fill="#193549" d="M9 11
+                           H23
+                           V19
+                           H9
+                           Z"/>
+    
+    <!-- Advanced optical units -->
+    <g>
+      <!-- Main sensor units -->
+      <rect x="11" y="13" width="4" height="4" fill="#24292e" rx="1"/>
+      <rect x="17" y="13" width="4" height="4" fill="#24292e" rx="1"/>
+      
+      <!-- Active sensor elements -->
+      <rect x="11.5" y="13.5" width="3" height="3" fill="#ffffff"/>
+      <rect x="17.5" y="13.5" width="3" height="3" fill="#ffffff"/>
+      
+      <!-- Sensor highlights -->
+      <rect x="12" y="14" width="2" height="2" fill="#00eeff" opacity="0.8"/>
+      <rect x="18" y="14" width="2" height="2" fill="#00eeff" opacity="0.8"/>
+    </g>
+  </g>
+
+  <!-- Enhanced Processing Matrix -->
+  <g>
+    <!-- Tech details with better spacing -->
+    <rect x="11" y="20" width="10" height="0.8" rx="0.4" fill="#24292e"/>
+    <rect x="13" y="22" width="6" height="0.8" rx="0.4" fill="#24292e"/>
+    <rect x="14" y="24" width="4" height="0.8" rx="0.4" fill="#24292e"/>
+  </g>
+
+  <!-- Refined Technical Details -->
+  <g stroke="#ffffff" stroke-width="0.3" opacity="0.4">
+    <!-- Side vents -->
+    <line x1="8" y1="15" x2="10" y2="15"/>
+    <line x1="8" y1="17" x2="10" y2="17"/>
+    <line x1="22" y1="15" x2="24" y2="15"/>
+    <line x1="22" y1="17" x2="24" y2="17"/>
+  </g>
+
+  <!-- Advanced Circuit Patterns -->
+  <g stroke="#ffffff" stroke-width="0.2" opacity="0.3">
+    <path d="M10 9 C13 6, 19 6, 22 9"/>
+    <path d="M10 25 C13 28, 19 28, 22 25"/>
+    <circle cx="16" cy="16" r="11" fill="none"/>
+  </g>
+
+  <!-- Energy Core Indicators -->
+  <g fill="#ffffff">
+    <circle cx="16" cy="4" r="0.6" opacity="0.9"/>
+    <circle cx="16" cy="16" r="0.2" opacity="0.7"/>
+  </g>
+
+  <!-- Power Lines -->
+  <g stroke="#ffffff" stroke-width="0.2" opacity="0.4">
+    <path d="M7 13 L25 13"/>
+    <path d="M7 21 L25 21"/>
+  </g>
 </svg>
