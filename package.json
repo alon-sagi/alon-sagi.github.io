@@ -5,7 +5,7 @@
   "description": "My portfolio website",
   "main": "server.js",
   "scripts": {
-    "start": "nodemon server/app.js",
+    "start": "nodemon server.js",
     "deploy": "git add . && git commit -m \"Auto-deploy commit\" && git push origin main"
   },
   "repository": {
