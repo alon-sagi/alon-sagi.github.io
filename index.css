@@ -200,46 +200,82 @@ nav a:hover {
 
 .image-container {
   z-index: 10;
-  position: absolute; 
-  top: 0; 
-  left: 0; 
-  width: 100%; 
-  display: flex; 
-  justify-content: center; 
-  align-items: center; 
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   margin-top: 45px;
   opacity: 0;
   animation: fadeIn 1s ease forwards;
   animation-delay: 1000ms;
+  perspective: 1000px;
 }
-  
+
 .image-container img {
-  box-shadow: rgb(200, 200, 250) 3px 0px 4px 0px;
-  height: 155px; 
-  width: 155px; 
-  border-radius: 50%; 
+  box-shadow:rgb(200, 200, 250) 3px 0px 4px 0px,rgba(200, 200, 250, 0.2) 0 15px 25px -12px;
+  height: 155px;
+  width: 155px;
+  border-radius: 50%;
   border: 1px solid rgba(255, 255, 255, 0.15);
-  padding: 2px; 
+  padding: 2px;
   background: transparent;
   animation: bow 1s ease forwards;
   animation-delay: 1500ms;
-  transition: .2s ease;
+  transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  transform-style: preserve-3d;
 }
 
 .image-container img:hover {
-  background: #111;
-  animation: none;
-  transform: rotate(-15deg);
+  background: rgba(17, 17, 17, 0.8);
+  box-shadow: rgb(200, 200, 250) 3px 0px 4px 0px, rgba(200, 200, 250, 0.3) 0 30px 60px -15px;
+}
+
+@keyframes float {
+  0%, 100% {
+    transform: translateY(0) rotate(0deg);
+  }
+  50% {
+    transform: translateY(-10px) rotate(-5deg);
+  }
 }
 
 @keyframes bow {
   0% {
-    transform: rotate(0deg);
+    transform: rotate3d(0, 0, 1, 0deg);
   }
   50% {
-    transform: rotate(-15deg);
+    transform: rotate3d(0, 1, 1, -15deg);
   }
   100% {
-    transform: rotate(0deg);
+    transform: rotate3d(0, 0, 1, 0deg);
+  }
+}
+
+.image-container img {
+  animation: float 6s ease-in-out infinite;
+}
+
+.image-container img:hover::after {
+  content: '';
+  position: absolute;
+  top: -5px;
+  left: -5px;
+  right: -5px;
+  bottom: -5px;
+  border-radius: 50%;
+  background: radial-gradient(circle at center,rgba(200, 200, 250, 0.2) 0%, transparent 70%);
+  z-index: -1;
+  animation: glow2 1.5s ease-in-out infinite alternate;
+}
+
+@keyframes glow2 {
+  from {
+    opacity: 0.5;
+  }
+  to {
+    opacity: 1;
   }
 }
