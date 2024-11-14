@@ -90,13 +90,13 @@ nav a:hover {
 }
   
 .content a {
-  color: inherit;
-  text-decoration: underline;
-  transition: color 500ms ease;
+  text-decoration: none;
+  color: rgb(200, 200, 250);
+  transition: opacity 500ms ease;
 }
   
 .content a:hover {
-  color: rgb(212, 212, 216);
+  opacity: 0.8;
 }
   
 #particles-container {
