@@ -46,7 +46,6 @@ nav ul {
 }
   
 nav a {
-  /* color: rgb(113, 113, 122); */
   color: #a1a1aa;
   text-decoration: none;
   font-size: 0.875rem;
@@ -54,12 +53,10 @@ nav a {
 }
   
 nav a:hover {
-  /* color: rgb(212, 212, 216); */
   color: rgb(200, 200, 250);
 }
 
 #navigation span {
-  /* color: rgb(200, 200, 250); */
   color: #fff;
 }
   
@@ -82,7 +79,7 @@ nav a:hover {
 }
   
 .content {
-  z-index: 1000;
+  z-index: 100;
   margin: 4rem 0;
   text-align: center;
   opacity: 0;
@@ -91,9 +88,18 @@ nav a:hover {
 }
   
 .content p {
-  /* color: rgb(113, 113, 122); */
   color: #a1a1aa;
   font-size: 0.875rem;
+}
+  
+.content a {
+  text-decoration: none;
+  color: rgb(200, 200, 250);
+  transition: opacity 500ms ease;
+}
+  
+.content a:hover {
+  opacity: 0.8;
 }
   
 #particles-container {
@@ -124,11 +130,6 @@ nav a:hover {
   animation: fadeRight 1000ms ease forwards, glow 4s ease infinite;
   animation-delay: 500ms;
   margin-top: 2rem;
-}
-
-.fadeIn {
-  opacity: 1;
-  animation: fadeIn 1s ease-in-out forwards;
 }
 
 @keyframes title {
@@ -198,6 +199,7 @@ nav a:hover {
 }
 
 .image-container {
+  z-index: 10;
   position: absolute; 
   top: 0; 
   left: 0; 
@@ -212,7 +214,6 @@ nav a:hover {
 }
   
 .image-container img {
-  z-index: 10;
   box-shadow: rgb(200, 200, 250) 3px 0px 4px 0px;
   height: 155px; 
   width: 155px; 
