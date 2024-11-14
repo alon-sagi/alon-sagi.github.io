@@ -149,7 +149,8 @@ class Particles {
 }
 
 setTimeout(() => {
-  new Particles(document.getElementById('particles-container'), {
+  const particlesContainer = document.getElementById('particles-container');
+  new Particles(particlesContainer, {
     quantity: 100,
     staticity: 30,
     ease: 30
