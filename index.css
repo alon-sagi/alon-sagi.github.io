@@ -96,16 +96,6 @@ nav a:hover {
   font-size: 0.875rem;
 }
   
-.content a {
-  text-decoration: none;
-  color: rgb(200, 200, 250);
-  transition: opacity 500ms ease;
-}
-  
-.content a:hover {
-  opacity: 0.8;
-}
-  
 #particles-container {
   position: absolute;
   inset: 0;
@@ -118,7 +108,7 @@ nav a:hover {
   width: 100vw;
   height: 1px;
   background: linear-gradient(to right, rgba(212, 212, 216, 0), rgba(212, 212, 216, 0.5), rgba(212, 212, 216, 0));
-  display: none;
+  display: block;
   position: relative;
   z-index: 1;
   opacity: 0;
@@ -140,13 +130,7 @@ nav a:hover {
   opacity: 1;
   animation: fadeIn 1s ease-in-out forwards;
 }
-  
-@media (min-width: 768px) {
-  .divider {
-    display: block;
-  }
-}
-  
+
 @keyframes title {
   0% {
     opacity: 0;
