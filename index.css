@@ -34,7 +34,7 @@ nav {
   margin: 4rem 0;
   opacity: 0;
   animation: fadeIn 1s ease forwards;
-  animation-delay: 200ms;
+  animation-delay: 1000ms;
 }
   
 nav ul {
@@ -66,7 +66,7 @@ nav a:hover {
 .title {
   font-weight: 700;
   font-family: 'CalSans', sans-serif;
-  font-size: 2.25rem;
+  font-size: 8rem;
   background: white;
   -webkit-background-clip: text;
   background-clip: text;
@@ -79,18 +79,6 @@ nav a:hover {
   opacity: 0;
   animation: title 1000ms ease forwards;
   animation-delay: 500ms;
-}
-  
-@media (min-width: 640px) {
-  .title {
-    font-size: 3.75rem;
-  }
-}
-  
-@media (min-width: 768px) {
-  .title {
-    font-size: 8rem;
-  }
 }
   
 .content {
@@ -234,6 +222,9 @@ nav a:hover {
   justify-content: center; 
   align-items: center; 
   margin-top: 45px;
+  opacity: 0;
+  animation: fadeIn 1s ease forwards;
+  animation-delay: 1000ms;
 }
   
 .image-container img {

@@ -155,8 +155,3 @@ setTimeout(() => {
     ease: 30
   });
 }, 200);
-
-setTimeout(() => {
-  document.getElementById('myImage').style.display = "";
-  document.getElementById('connectBtn').style.display = "flex";
-}, 1300);
