@@ -46,6 +46,10 @@ nav a {
 nav a:hover {
   color: rgb(212, 212, 216);
 }
+
+nav span {
+  color: rgb(200, 200, 250);
+}
   
 .title {
   font-size: 2.25rem;
