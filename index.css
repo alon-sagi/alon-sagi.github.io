@@ -218,13 +218,29 @@ nav a:hover {
   height: 155px; 
   width: 155px; 
   border-radius: 50%; 
-  border: 1px solid rgba(255, 255, 255, 0.15); 
+  border: 1px solid rgba(255, 255, 255, 0.15);
   padding: 2px; 
   background: transparent;
+  animation: bow 1s ease forwards;
+  animation-fill-mode: none;
+  animation-delay: 1500ms;
   transition: .2s ease;
 }
 
 .image-container img:hover {
   background: #111;
+  animation: none;
   transform: rotate(-15deg);
+}
+
+@keyframes bow {
+  0% {
+    transform: rotate(0deg);
+  }
+  50% {
+    transform: rotate(-15deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
 }
