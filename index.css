@@ -229,7 +229,7 @@ nav a:hover {
   transition: .2s ease;
 }
 
-img:hover {
+.image-container img:hover {
   background: #111;
   transform: rotate(-15deg);
 }
