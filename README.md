@@ -1,3 +1,3 @@
 # Alan Sage - Portfolio
 
-![Screenshot](/public/screenshot.png)
+![Screenshot](/assets/screenshot.png)
