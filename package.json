@@ -1,0 +1,26 @@
+{
+  "type": "module",
+  "name": "alon-sagi.github.io",
+  "version": "1.0.0",
+  "description": "My portfolio website",
+  "main": "server.js",
+  "scripts": {
+    "start": "nodemon server/app.js",
+    "deploy": "git add . && git commit -m \"Auto-deploy commit\" && git push origin main"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/alon-sagi/alon-sagi.github.io.git"
+  },
+  "author": "Alon Sagi",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/alon-sagi/alon-sagi.github.io/issues"
+  },
+  "homepage": "https://github.com/alon-sagi/alon-sagi.github.io#readme",
+  "dependencies": {
+    "concurrently": "^9.1.0",
+    "express": "^4.21.1",
+    "nodemon": "^3.1.7"
+  }
+}
