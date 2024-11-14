@@ -26,7 +26,7 @@ body {
 }
 
 b {
-  font-weight: 600;
+  font-weight: 700;
 }
 
 nav {
@@ -46,7 +46,8 @@ nav ul {
 }
   
 nav a {
-  color: rgb(113, 113, 122);
+  /* color: rgb(113, 113, 122); */
+  color: #a1a1aa;
   text-decoration: none;
   font-size: 0.875rem;
   transition: color 500ms ease;
@@ -101,7 +102,8 @@ nav a:hover {
 }
   
 .content p {
-  color: rgb(113, 113, 122);
+  /* color: rgb(113, 113, 122); */
+  color: #a1a1aa;
   font-size: 0.875rem;
 }
   
