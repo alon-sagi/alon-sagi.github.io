@@ -218,6 +218,7 @@ nav a:hover {
 }
   
 .image-container img {
+  z-index: 10;
   box-shadow: #0ef 3px 0px 4px 0px;
   height: 155px; 
   width: 155px; 
@@ -225,4 +226,10 @@ nav a:hover {
   border: 1px solid rgba(255, 255, 255, 0.15); 
   padding: 2px; 
   background: transparent;
+  transition: .2s ease;
+}
+
+img:hover {
+  background: #111;
+  transform: rotate(-15deg);
 }
