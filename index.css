@@ -48,7 +48,8 @@ nav a:hover {
 }
 
 #navigation span {
-  color: rgb(200, 200, 250);
+  /* color: rgb(200, 200, 250); */
+  color: #fff;
 }
   
 .title {
