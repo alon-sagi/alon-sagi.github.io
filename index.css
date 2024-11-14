@@ -222,7 +222,6 @@ nav a:hover {
   padding: 2px; 
   background: transparent;
   animation: bow 1s ease forwards;
-  animation-fill-mode: none;
   animation-delay: 1500ms;
   transition: .2s ease;
 }
