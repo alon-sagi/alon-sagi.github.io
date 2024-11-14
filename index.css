@@ -64,18 +64,84 @@ nav a:hover {
   font-weight: 700;
   font-family: 'CalSans', sans-serif;
   font-size: 8rem;
-  background: #0ef;
+  position: relative;
+  z-index: 10;
+  white-space: nowrap;
+  opacity: 0;
+  padding: 0.875rem 0.125rem;
+  cursor: default;
+
+  background: linear-gradient(
+    to bottom,
+    rgba(255,255,255,1) 0%,
+    rgba(230,230,230,1) 100%
+  );
   -webkit-background-clip: text;
   background-clip: text;
   color: transparent;
-  padding: 0.875rem 0.125rem;
-  cursor: default;
-  z-index: 10;
-  position: relative;
-  white-space: nowrap;
-  opacity: 0;
+
+  text-shadow:
+    0 1px 0 #ccc,
+    0 2px 0 #c9c9c9,
+    0 3px 0 #bbb,
+    0 4px 0 #b9b9b9,
+    0 5px 0 #aaa,
+    0 6px 1px rgba(0,0,0,.1),
+    0 0 5px rgba(0,0,0,.1),
+    0 1px 3px rgba(0,0,0,.3),
+    0 3px 5px rgba(0,0,0,.2),
+    0 5px 10px rgba(0,0,0,.25);
   animation: title 1000ms ease forwards;
-  animation-delay: 500ms;
+  animation-delay: 100ms;
+}
+
+.title::after {
+  content: attr(data-text);
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: -1;
+  background: white;
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  filter: blur(8px);
+  opacity: 0.3;
+}
+
+@keyframes title {
+  0% {
+    opacity: 0;
+    transform: translateY(20px) translateZ(-100px);
+    letter-spacing: 0.25em;
+    line-height: 0%;
+    text-shadow: none;
+  }  
+  25% {
+    opacity: 0;
+    transform: translateY(10px) translateZ(-50px);
+    line-height: 0%;
+  }
+  80% {
+    opacity: 0.5;
+  }    
+  100% {
+    opacity: 1;
+    transform: translateY(0) translateZ(0);
+    letter-spacing: normal;
+    line-height: 100%;
+    text-shadow:
+      0 1px 0 rgb(200, 200, 250),
+      0 2px 0 rgb(200, 200, 250),
+      0 3px 0 rgb(200, 200, 250),
+      0 4px 0 rgb(200, 200, 250),
+      0 5px 0 rgb(200, 200, 250),
+      0 6px 1px rgba(0,0,0,.1),
+      0 0 5px rgba(0,0,0,.1),
+      0 1px 3px rgba(0,0,0,.3),
+      0 3px 5px rgba(0,0,0,.2),
+      0 5px 10px rgba(0,0,0,.25);
+  }
 }
   
 .content {
@@ -132,29 +198,6 @@ nav a:hover {
   margin-top: 2rem;
 }
 
-@keyframes title {
-  0% {
-    opacity: 0;
-    transform: translateY(20px);
-    letter-spacing: 0.25em;
-    line-height: 0%;
-  }  
-  25% {
-    opacity: 0;
-    transform: translateY(10px);
-    line-height: 0%;
-  }  
-  80% {
-    opacity: 0.5;
-  }  
-  100% {
-    opacity: 1;
-    transform: translateY(0);
-    letter-spacing: normal;
-    line-height: 100%;
-  }
-}
-  
 @keyframes fadeIn {
   from {
     opacity: 0;
