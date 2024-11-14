@@ -238,7 +238,7 @@ nav a:hover {
   
 .image-container img {
   z-index: 10;
-  box-shadow: #0ef 3px 0px 4px 0px;
+  box-shadow: rgb(200, 200, 250) 3px 0px 4px 0px;
   height: 155px; 
   width: 155px; 
   border-radius: 50%; 
