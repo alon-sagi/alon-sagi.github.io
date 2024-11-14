@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
+  <!-- Background circle -->
+  <circle cx="16" cy="16" r="16" fill="#2D3748"/>
+  
+  <!-- Letters AS -->
+  <path d="M10 22L14 10H16L20 22H18L17 19H13L12 22H10ZM13.5 17H16.5L15 12L13.5 17Z" fill="white"/>
+  
+  <!-- Decorative line under text -->
+  <line x1="10" y1="24" x2="22" y2="24" stroke="white" stroke-width="1"/>
+</svg>

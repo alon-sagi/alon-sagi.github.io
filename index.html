@@ -1,34 +1,41 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="he">
   <head>
-    <title>Alon Sagi</title>
-    
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <meta content="Portfolio Website" name="description">
-    <meta content="width=device-width, initial-scale=1" name="viewport">
-    
-    <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png" />
-    <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png" />
-    <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png" />
-    <link rel="manifest" href="favicon/site.webmanifest" />
-
-    <style>
-      body, html {
-        margin: 0;
-        padding: 0;
-        overflow: hidden;
-      }
-      iframe {
-        position: absolute;
-        width: 100%;
-        height: 100%;
-        border: none;
-      }
-    </style>
+    <title>Alon Sagi - Portfolio</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alon Sagi - Portfolio</title>
+    <link rel="icon" type="image/svg+xml" href="favicon.svg">
+    <link href="/index.css" rel="stylesheet" />
   </head>
-  
   <body>
-    <iframe src="https://alonsagi.ngrok.io" allow="microphone" frameborder="0"></iframe>
+    <div class="image-container">
+      <img id="myImage" src="/assets/images/alon.png" class="fadeIn" style="display:none;" />
+    </div>
+    <nav>
+      <ul id="navigation">
+        <li><a href="/contact">יצירת קשר</a></li>
+        <span style="color:#fff;">•</span>
+        <li><a href="/projects">תיק עבודות</a></li>
+        <span style="color:#fff;">•</span>
+        <li><a href="/about">אודות</a></li>
+      </ul>
+    </nav>
+    <div class="divider top"></div>
+    <div id="particles-container">
+      <canvas></canvas>
+    </div>
+    <h1 class="title">Alon Sagi</h1>
+    <div class="divider bottom"></div>
+    <div class="content">
+      <div style="display:flex; gap:10px;">
+        <p>בינה מלאכותית</p>
+        <span style="color:#fff;">•</span>
+        <p>תלת מימד</p>
+        <span style="color:#fff;">•</span>
+        <p>פיתוח אפליקציות ווב</p>
+      </div>
+    </div>
+    <script type="module" src="/index.js"></script>
   </body>
 </html>
